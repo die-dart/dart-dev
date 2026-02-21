@@ -42,18 +42,20 @@ body {
     width: 100%;
     max-width: 800px;
     padding: 60px 40px;
-    background-color: var(--footer-bg);
-    transition: background-color 0.3s ease;
-    /* Optional: shadow to make it stand out like a canvas if needed */
-    /* box-shadow: 0 4px 20px rgba(0,0,0,0.05); */
-    border-radius: 12px;
 }
 
 .brand {
+    display: grid;
+    grid-template-columns: minmax(150px, 1fr) minmax(150px, 1fr) minmax(150px, 1fr);
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.brand-info {
     display: flex;
     align-items: center;
     gap: 12px;
-    margin-bottom: 32px;
 }
 
 .brand-icon {
@@ -117,14 +119,14 @@ body {
 }
 
 .theme-toggle-btn {
-    margin-left: auto;
-    /* Push it to the right */
+    grid-column: 3;
+    justify-self: start;
     background: var(--footer-bg);
     border: 1px solid var(--text-secondary);
     color: var(--text-primary);
     padding: 8px 16px;
     border-radius: 20px;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
@@ -142,9 +144,15 @@ body {
 
 /* Make it responsive */
 @media (max-width: 600px) {
-    .footer-content {
+
+    .footer-content,
+    .brand {
         grid-template-columns: 1fr;
         gap: 20px;
+    }
+
+    .theme-toggle-btn {
+        grid-column: 1;
     }
 
     .column-group {
