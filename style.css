@@ -64,6 +64,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .brand-text {
@@ -111,51 +112,17 @@ body {
 }
 
 .copyright {
-    margin-top: -10px;
-    /* pull up slightly if needed depending on gap */
-    font-size: 12px;
-    font-weight: 500;
-    color: var(--copyright-text);
-}
 
-.theme-toggle-btn {
-    grid-column: 3;
-    justify-self: start;
-    background: var(--footer-bg);
-    border: 1px solid var(--text-secondary);
-    color: var(--text-primary);
-    padding: 8px 16px;
-    border-radius: 20px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: 500;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-    /* Lighter shadow to match the brand area */
-    transition: transform 0.2s ease, background 0.3s ease;
-}
+    /* Make it responsive */
+    @media (max-width: 600px) {
 
-.theme-toggle-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
+        .footer-content,
+        .brand {
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
 
-/* Make it responsive */
-@media (max-width: 600px) {
-
-    .footer-content,
-    .brand {
-        grid-template-columns: 1fr;
-        gap: 20px;
+        .column-group {
+            margin-bottom: 32px;
+        }
     }
-
-    .theme-toggle-btn {
-        grid-column: 1;
-    }
-
-    .column-group {
-        margin-bottom: 32px;
-    }
-}
