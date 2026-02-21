@@ -123,13 +123,26 @@ body {
 /* Make it responsive */
 @media (max-width: 600px) {
 
-    .footer-content,
     .brand {
         grid-template-columns: 1fr;
         gap: 20px;
     }
 
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .footer-column {
+        display: contents;
+    }
+
+    .legal-group {
+        order: 99;
+    }
+
     .column-group {
-        margin-bottom: 32px;
+        margin-bottom: 0;
     }
 }
