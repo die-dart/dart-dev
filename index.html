@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Humation Footer</title>
+    <title>DartDev</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -12,22 +12,23 @@
 
     <footer class="footer-section">
         <div class="brand">
-            <div class="brand-icon">
-                <!-- Simple SVG representation of the avatar icon in the image -->
-                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16 26C11.5817 26 8 22.4183 8 18C8 13.5817 11.5817 10 16 10C20.4183 10 24 13.5817 24 18C24 22.4183 20.4183 26 16 26Z"
-                        fill="var(--svg-fill)" />
-                    <path d="M12 18H14M20 18H18" stroke="var(--footer-bg)" stroke-width="2" stroke-linecap="round" />
-                    <path d="M16 10C16 10 17 6 20 6" stroke="var(--svg-stroke)" stroke-width="2"
-                        stroke-linecap="round" />
-                    <path d="M8 28C9.5 24.5 12 23 16 23C20 23 22.5 24.5 24 28" stroke="var(--svg-stroke)"
-                        stroke-width="3" stroke-linecap="round" />
-                </svg>
+            <div class="brand-info">
+                <div class="brand-icon" id="logoIcon" title="Toggle Dark Mode">
+                    <!-- Simple SVG representation of the avatar icon in the image -->
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16 26C11.5817 26 8 22.4183 8 18C8 13.5817 11.5817 10 16 10C20.4183 10 24 13.5817 24 18C24 22.4183 20.4183 26 16 26Z"
+                            fill="var(--svg-fill)" />
+                        <path d="M12 18H14M20 18H18" stroke="var(--footer-bg)" stroke-width="2"
+                            stroke-linecap="round" />
+                        <path d="M16 10C16 10 17 6 20 6" stroke="var(--svg-stroke)" stroke-width="2"
+                            stroke-linecap="round" />
+                        <path d="M8 28C9.5 24.5 12 23 16 23C20 23 22.5 24.5 24 28" stroke="var(--svg-stroke)"
+                            stroke-width="3" stroke-linecap="round" />
+                    </svg>
+                </div>
+                <span class="brand-text">DartDev</span>
             </div>
-            <span class="brand-text">DartDev</span>
-            <!-- Dark Mode Toggle Button -->
-            <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle Dark Mode">Dark</button>
         </div>
 
         <div class="footer-content">
@@ -35,7 +36,7 @@
                 <div class="column-group">
                     <h3>Social Community</h3>
                     <ul>
-                        <li><a href="#">X.com</a></li>
+                        <li><a href="https://x.com/yusufnaruh">X.com</a></li>
                         <li><a href="#">Discord</a></li>
                     </ul>
                 </div>
@@ -43,8 +44,8 @@
                 <div class="column-group">
                     <h3>Legal</h3>
                     <ul>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
                         <li><a href="#">Commercial Transaction Act</a></li>
                     </ul>
                 </div>
@@ -76,17 +77,16 @@
     </footer>
 
     <script>
-        const themeToggleBtn = document.getElementById('themeToggle');
+        const logoIcon = document.getElementById('logoIcon');
         const body = document.body;
 
-        themeToggleBtn.addEventListener('click', () => {
+        function toggleTheme() {
             body.classList.toggle('dark-mode');
-            if (body.classList.contains('dark-mode')) {
-                themeToggleBtn.textContent = 'Light';
-            } else {
-                themeToggleBtn.textContent = 'Dark';
-            }
-        });
+        }
+
+        if (logoIcon) {
+            logoIcon.addEventListener('click', toggleTheme);
+        }
     </script>
 </body>
 

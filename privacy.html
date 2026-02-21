@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - DartDev</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            display: block;
+            /* Override flex layout from style.css for scrolling */
+        }
+
+        .page-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .legal-section {
+            width: 100%;
+            max-width: 800px;
+            padding: 80px 40px 20px 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            flex: 1 0 auto;
+        }
+
+        .back-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            transition: color 0.2s ease;
+            align-self: flex-start;
+        }
+
+        .back-link:hover {
+            color: var(--text-primary);
+        }
+
+        .legal-header {
+            margin-bottom: 8px;
+        }
+
+        .legal-header h1 {
+            font-size: 32px;
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+
+        .legal-header p {
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        .legal-body {
+            text-align: justify;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            line-height: 1.6;
+            color: var(--text-primary);
+        }
+
+        .legal-body p {
+            font-size: 15px;
+        }
+
+        /* Adjust footer padding to be at the bottom nicely */
+        .footer-section {
+            padding-top: 40px;
+            padding-bottom: 60px;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-container">
+        <main class="legal-section">
+
+
+            <div class="brand-info">
+                <div class="brand-icon" id="logoIcon" title="Toggle Dark Mode">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16 26C11.5817 26 8 22.4183 8 18C8 13.5817 11.5817 10 16 10C20.4183 10 24 13.5817 24 18C24 22.4183 20.4183 26 16 26Z"
+                            fill="var(--svg-fill)" />
+                        <path d="M12 18H14M20 18H18" stroke="var(--footer-bg)" stroke-width="2"
+                            stroke-linecap="round" />
+                        <path d="M16 10C16 10 17 6 20 6" stroke="var(--svg-stroke)" stroke-width="2"
+                            stroke-linecap="round" />
+                        <path d="M8 28C9.5 24.5 12 23 16 23C20 23 22.5 24.5 24 28" stroke="var(--svg-stroke)"
+                            stroke-width="3" stroke-linecap="round" />
+                    </svg>
+                </div>
+                <span class="brand-text">DartDev</span>
+            </div>
+
+            <a href="index.html" class="back-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 12H5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M12 19L5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+                Kembali ke Beranda
+            </a>
+
+            <div class="legal-header">
+                <h1>Kebijakan Privasi (Privacy Policy)</h1>
+                <p>Terakhir diperbarui: 21 Februari 2026</p>
+            </div>
+
+            <div class="legal-body">
+                <p><strong>DartDev.</strong> menghargai dan melindungi privasi setiap pengguna layanan kami. Kebijakan
+                    ini menjelaskan
+                    bagaimana kami mengumpulkan, menggunakan, menyimpan, dan melindungi informasi yang Anda berikan.</p>
+
+                <p>Dalam penyediaan layanan, <strong>DartDev.</strong> dapat mengumpulkan informasi seperti nama, alamat
+                    email, nomor
+                    telepon, informasi perusahaan, serta data penggunaan sistem. Informasi tersebut digunakan
+                    semata-mata untuk keperluan operasional layanan, peningkatan kualitas sistem, komunikasi dengan
+                    pengguna, serta pemenuhan kewajiban hukum yang berlaku.</p>
+
+                <p>Kami berkomitmen untuk menjaga keamanan data dengan menerapkan langkah teknis dan administratif yang
+                    wajar guna melindungi informasi dari akses yang tidak sah, kehilangan, atau penyalahgunaan. Data
+                    hanya akan diakses oleh pihak yang berwenang dan tidak akan dijual atau diperdagangkan kepada pihak
+                    lain.</p>
+
+                <p>Dalam kondisi tertentu, informasi dapat dibagikan kepada penyedia layanan pihak ketiga yang bekerja
+                    sama dengan <strong>DartDev.</strong>, seperti penyedia infrastruktur atau sistem pembayaran,
+                    sepanjang diperlukan
+                    untuk mendukung operasional layanan dan tetap sesuai dengan ketentuan hukum yang berlaku.</p>
+
+                <p>Data pengguna akan disimpan selama diperlukan untuk tujuan penyediaan layanan atau sesuai dengan
+                    ketentuan peraturan perundang-undangan. Pengguna berhak untuk meminta akses, pembaruan, atau
+                    penghapusan data pribadi sesuai dengan ketentuan hukum yang berlaku di Indonesia.</p>
+
+                <p><strong>DartDev.</strong> dapat memperbarui Kebijakan Privasi ini dari waktu ke waktu. Setiap
+                    perubahan akan
+                    dipublikasikan melalui platform resmi kami.</p>
+            </div>
+        </main>
+
+        <!-- <footer class="footer-section">
+            <div class="brand">
+                <div class="brand-info">
+                    <div class="brand-icon" id="logoIcon" title="Toggle Dark Mode">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16 26C11.5817 26 8 22.4183 8 18C8 13.5817 11.5817 10 16 10C20.4183 10 24 13.5817 24 18C24 22.4183 20.4183 26 16 26Z"
+                                fill="var(--svg-fill)" />
+                            <path d="M12 18H14M20 18H18" stroke="var(--footer-bg)" stroke-width="2"
+                                stroke-linecap="round" />
+                            <path d="M16 10C16 10 17 6 20 6" stroke="var(--svg-stroke)" stroke-width="2"
+                                stroke-linecap="round" />
+                            <path d="M8 28C9.5 24.5 12 23 16 23C20 23 22.5 24.5 24 28" stroke="var(--svg-stroke)"
+                                stroke-width="3" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <span class="brand-text">DartDev</span>
+                </div>
+            </div>
+
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="column-group">
+                        <h3>Social Community</h3>
+                        <ul>
+                            <li><a href="https://x.com/yusufnaruh">X.com</a></li>
+                            <li><a href="#">Discord</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="column-group">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="terms.html">Terms of Service</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Commercial Transaction Act</a></li>
+                        </ul>
+                    </div>
+
+                    <p class="copyright">© 2026 DartDev</p>
+                </div>
+
+                <div class="footer-column">
+                    <div class="column-group">
+                        <h3>Illustration System</h3>
+                        <ul>
+                            <li><a href="#">Avatar</a></li>
+                            <li><a href="#">Figma Plugin</a></li>
+                            <li><a href="#">Some Friends</a></li>
+                            <li><a href="#">Whocares?</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <div class="column-group">
+                        <h3>Contact</h3>
+                        <ul>
+                            <li><a href="#">Contact Form</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer> -->
+    </div>
+    <script>
+        const logoIcon = document.getElementById('logoIcon');
+        const body = document.body;
+
+        function toggleTheme() {
+            body.classList.toggle('dark-mode');
+        }
+
+        if (logoIcon) {
+            logoIcon.addEventListener('click', toggleTheme);
+        }
+    </script>
+</body>
+
+</html>
